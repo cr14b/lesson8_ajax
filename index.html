@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Claudia Reoyo
+Date: 4/5/2017
 Filename:   index.html
 - ->
     
@@ -53,6 +53,48 @@ Filename:   index.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Director:</h3>
+            <p class="list-group-item-text lead text-primary" id="Director">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Genre:</h3>
+            <p class="list-group-item-text lead text-primary" id="Genre">  </p>
+        </a> 
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Runtime:</h3>
+            <p class="list-group-item-text lead text-primary" id="Runtime"> </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Language:</h3>
+            <p class="list-group-item-text lead text-primary" id="Language"> </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Awards:</h3>
+            <p class="list-group-item-text lead text-primary" id="Awards">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Ratings:</h3>
+            <p class="list-group-item-text lead text-primary" id="Ratings">  </p>
+	    </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">BoxOffice:</h3>
+            <p class="list-group-item-text lead text-primary" id="BoxOffice">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Poster:</h3>
+            <p class="list-group-item-text lead text-primary" >  
+            <img src="#Poster">
+            </p>
+        </a> 
+
+
 
     </div>
 </div> 
@@ -71,6 +113,14 @@ Filename:   index.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Director').html(json.Director); //1
+                     $('#Genre').html(json.Genre); //2
+                     $('#Runtime').html(json.Runtime); //3
+                     $('#Language').html(json.Language); //4
+                     $('#Awards').html(json.Awards); //5
+                     $('#Ratings').html(json.Ratings); //6
+                     $('#BoxOffice').html(json.BoxOffice); //7
+                     $('#Poster').html(json.Poster); //8
                 })
                 .fail(function() {
                       alert("Posting failed.");              
